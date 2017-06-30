@@ -173,7 +173,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Mitarbeiter.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Gehege.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -242,6 +241,7 @@
     <Content Include="Views\Gehege\Index.cshtml" />
     <Content Include="Views\Tiere\Create.cshtml" />
     <Content Include="Views\Mitarbeiter\Create.cshtml" />
+    <Content Include="Views\Gehege\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

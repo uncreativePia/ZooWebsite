@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PiasWebsite.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -12,6 +13,19 @@ namespace PiasWebsite.Controllers
 		public ActionResult Index()
 		{
 			return View("Index", Zoo.Gehege);
+		}
+
+		public ActionResult Create()
+		{
+			return View();
+
+		}
+
+		[HttpPost]
+		public ActionResult Create(Gehege gehege)
+		{
+			Zoo.Gehege.Add(gehege);
+			return RedirectToAction("Index");
 		}
 	}
 }

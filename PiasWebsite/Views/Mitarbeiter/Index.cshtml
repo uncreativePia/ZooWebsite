@@ -5,13 +5,14 @@
 
 <h2>Mitarbeiter</h2> <br />
 
-	@Html.ActionLink("Mitarbeiter hinzufügen", "Create", "Mitarbeiter", new object { }, new { @class = "btn btn-warning" })
+	@Html.ActionLink("Mitarbeiter hinzufügen", "Create", "Mitarbeiter", new object { }, new { @class = "btn btn-info" })
 
 <ul class="ZooListe">
+
 	@for (int i = 0; i < Model.Count; i++)
 	{
-		<li>
-			Name: @Model[i].Name <br />
+		<li style="color: #0026ff;">
+			Name: @Model[i].Name  <br />
 			Geschlecht: @Model[i].Geschlecht <br />
 			Gehalt: @Model[i].Gehalt € <br />
 		</li>

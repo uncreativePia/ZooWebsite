@@ -6,6 +6,11 @@
 <h2>Tier<br/></h2>
 
 <form method="post">
+
+	<div class="form-group">
+		<label for="Tierart">Tierart</label>
+		<input type="text" class="form-control" id="Tierart" placeholder="Tierart" name="Tierart">
+	</div>
 	<div class="form-group">
 		<label for="Name">Name</label>
 		<input type="text" class="form-control" id="Name" placeholder="Name" name="Name">
@@ -25,9 +30,9 @@
 	<div class="form-group">
 	<label for="Geschlecht">Geschlecht</label>
 	<select class="form-control" id="Geschlecht" name="Geschlecht">
-		<option>männlich</option>
-		<option>weiblich</option>
-		<option>andere</option>
+		<option value="m">männlich</option>
+		<option value="w">weiblich</option>
+		<option value="a">andere</option>
 	</select>
 	</div>
 	<button type="submit" class="btn btn-default">Speichern</button>

@@ -1,0 +1,21 @@
+﻿@model PiasWebsite.Models.Gehege
+@{
+	ViewBag.Title = "Gehege";
+}
+
+<h2>Gehege<br /></h2>
+
+<form method="post">
+
+	<div class="form-group">
+		<label for="Tier">Tier</label>
+		<input type="text" class="form-control" id="Tier" placeholder="Tier" name="Tier">
+	</div>
+	<div class="form-group">
+		<label for="Gehege Art">Gehege Art</label>
+		<input type="text" class="form-control" id="GehegeArt" placeholder="Gehege Art" name="GehegeArt">
+	</div>
+	
+	<button type="submit" class="btn btn-default">Speichern</button>
+
+</form>

@@ -11,6 +11,7 @@ namespace PiasWebsite
 		public static void AddTiere ()
 		{
 			var erstesTier = new Models.Tier();
+			erstesTier.Tierart = "Hund";
 			erstesTier.Name = "Jack";
 			erstesTier.Groesse = 1.20f;
 			erstesTier.Gewicht = 50;
@@ -19,6 +20,7 @@ namespace PiasWebsite
 			Tiere.Add(erstesTier);
 
 			var zweitesTier = new Models.Tier();
+			zweitesTier.Tierart = "Einhorn";
 			zweitesTier.Name = "Helmut";
 			zweitesTier.Groesse = 0.35f;
 			zweitesTier.Gewicht = 50;

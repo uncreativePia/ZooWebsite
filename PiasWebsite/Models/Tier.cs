@@ -7,6 +7,7 @@ namespace PiasWebsite.Models
 {
 	public class Tier
 	{
+		public string Tierart { get; set; }
 		public string Name { get; set; }
 		public float Groesse { get; set; }
 		public float Gewicht { get; set; }
