@@ -1,0 +1,35 @@
+﻿@model PiasWebsite.Models.Tier
+@{
+	ViewBag.Title = "Tier";
+}
+
+<h2>Tier<br/></h2>
+
+<form>
+	<div class="form-group">
+		<label for="Name">Name</label>
+		<input type="text" class="form-control" id="Name" placeholder="Name">
+	</div>
+	<div class="form-group">
+		<label for="Groesse">Groesse</label>
+		<input type="number" class="form-control" id="Groesse" placeholder="Groesse">
+	</div>
+	<div class="form-group">
+		<label for="Gewicht">Gewicht</label>
+		<input type="number" class="form-control" id="Gewicht" placeholder="Gewicht">
+	</div>
+	<div class="form-group">
+		<label for="Herkunft">Herkunft</label>
+		<input type="text" class="form-control" id="Herkunft" placeholder="Herkunft">
+	</div>
+	<div class="form-group">
+	<label for="Geschlecht">Geschlecht</label>
+	<select class="form-control" id="Geschlecht">
+		<option>männlich</option>
+		<option>weiblich</option>
+		<option>andere</option>
+	</select>
+	</div>
+	<button type="submit" class="btn btn-default">Speichern</button>
+
+</form>

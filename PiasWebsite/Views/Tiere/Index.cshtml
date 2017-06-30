@@ -1,0 +1,21 @@
+﻿@model List<PiasWebsite.Models.Tier>
+@{
+	ViewBag.Title = "Tiere";
+}
+
+
+<h2>Tiere</h2> <br />
+	@Html.ActionLink("Tier hinzufügen", "Create", "Tiere", new object { }, new { @class = "btn btn-warning" })
+	
+	<ul class="ZooListe">
+		@for (int i=0; i< Model.Count; i++)
+		{
+			<li>Name: @Model[i].Name <br/> 
+				Groesse: @Model[i].Groesse m <br/>
+				Gewicht: @Model[i].Gewicht kg <br/>
+				Geschlecht: @Model[i].Geschlecht <br/>
+				Herkunft: @Model[i].Herkunft <br/> </li>
+
+		}
+
+	</ul>

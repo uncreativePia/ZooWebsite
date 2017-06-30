@@ -1,0 +1,26 @@
+﻿@model PiasWebsite.Models.Mitarbeiter
+@{
+	ViewBag.Title = "Mitarbeiter";
+}
+
+<h2>Mitarbeiter<br /></h2>
+
+<form>
+	<div class="form-group">
+		<label for="Name">Name</label>
+		<input type="text" class="form-control" id="Name" placeholder="Name">
+	</div>
+	<div class="form-group">
+		<label for="Gehalt">Gehalt</label>
+		<input type="number" class="form-control" id="Gehalt" placeholder="Gehalt">
+	</div>
+	<div class="form-group">
+		<label for="Geschlecht">Geschlecht</label>
+		<select class="form-control" id="Geschlecht">
+			<option>männlich</option>
+			<option>weiblich</option>
+		</select>
+	</div>
+	<button type="submit" class="btn btn-default">Speichern</button>
+
+</form>
